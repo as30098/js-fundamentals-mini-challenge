@@ -29,7 +29,7 @@ This assessment is meant to give you a chance to practice with the key skills yo
 Create a variable called `counter` and assign it to a value of 1. Then, on a new line, *reassign* the value of `counter` to 2.
 
 ```js
-console.log(counter) 
+console.log(counter)
 // => 2
 ```
 
@@ -39,7 +39,7 @@ Create a variable called `name` and assign it to a value of your name. You *shou
 
 ```js
 // attempting to reassign should throw an error
-name = "Not Raffy" 
+name = "Not Raffy"
 // => TypeError
 ```
 
@@ -67,19 +67,25 @@ console.log(drinkWater(12))
 
 ### Question 4
 
-Write a function `sameSameButDifferent` that takes in two arguments, `num` and `maybeNum`. If `num` and `maybeNum` are both numbers, and the same value, it should return `"same same"`. If `num` is the same value as `maybeNum` after converting `maybeNum` to a number, it should return `"same same (but different)"`. Otherwise, it should return `"different"`.
+Write a function `sameSameButDifferent` that takes in two arguments, `num` and `maybeNum`.
+
+<!-- If `num` and `maybeNum` are both numbers, and the same value, it should return `"same same"`. -->
+
+If `num` is the same value as `maybeNum` after converting `maybeNum` to a number, it should return `"same same (but different)"`.
+
+Otherwise, it should return `"different"`.
 
 ```js
-console.log(sameSameButDifferent(5, 5)) 
+console.log(sameSameButDifferent(5, 5))
 // => "same same"
 
-console.log(sameSameButDifferent(123, "123")) 
+console.log(sameSameButDifferent(123, "123"))
 // => "same same (but different)"
 
-console.log(sameSameButDifferent(5, 7)) 
+console.log(sameSameButDifferent(5, 7))
 // => "different"
 
-console.log(sameSameButDifferent(123, "122")) 
+console.log(sameSameButDifferent(123, "122"))
 // => "different"
 ```
 
@@ -110,7 +116,7 @@ def print_name_and_phones(users)
 end
 
 users = [
-  { 
+  {
     name: "Duane",
     phones: {
       cell: "555-123-4567",
@@ -137,7 +143,7 @@ print_name_and_phones(users)
 
 ### Callbacks
 
-The function `myMap` takes in two arguments: an array, and a callback function. `myMap` will return a new array by calling the callback function with each element of the array. 
+The function `myMap` takes in two arguments: an array, and a callback function. `myMap` will return a new array by calling the callback function with each element of the array.
 
 ```js
 function myMap(array, callback) {
@@ -158,10 +164,10 @@ You should not change any code inside the `myMap` function to get the following 
 Write a function `triple` to be used as a callback function with the `myMap` function, so that calling `myMap` with an array of numbers and your `triple` function will return a new array with each value from the original array tripled.
 
 ```js
-console.log(myMap([1,2,3,4,5], triple)) 
+console.log(myMap([1,2,3,4,5], triple))
 // => [3,6,9,12,15]
 
-console.log(myMap([2,4,6,8], triple))   
+console.log(myMap([2,4,6,8], triple))
 // => [6,12,18,24]
 ```
 
@@ -170,7 +176,7 @@ console.log(myMap([2,4,6,8], triple))
 Write a function `greet` to be used as a callback function with the `myMap` function, so that calling `myMap` with an array of names and your `greet` function will return a new array with a greeting for each name.
 
 ```js
-console.log(myMap(["Raffy", "Chase"], greet)) 
+console.log(myMap(["Raffy", "Chase"], greet))
 // => ["Hi, Raffy!", "Hi, Chase!"]
 ```
 
@@ -237,7 +243,7 @@ console.log(takeATicketNumber(line))
 
 ### Scopes & Closures - Question 2 (BONUS)
 
-Try to solve the problem above using a higher order function, and without using a global variable for the ticket number. Write a higher order function called `ticketNumberGeneratorFunc` that returns a nested `takeATicketNumber` function. The other functionality should remain the same. 
+Try to solve the problem above using a higher order function, and without using a global variable for the ticket number. Write a higher order function called `ticketNumberGeneratorFunc` that returns a nested `takeATicketNumber` function. The other functionality should remain the same.
 
 ```js
 const newLine = []
