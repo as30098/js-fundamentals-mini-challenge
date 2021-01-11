@@ -93,6 +93,14 @@ console.log("%c----------", "color: red")
 // *** Uncomment the lines below to test
 console.log("%cQuestion 6", "color: red")
 
+function printNameAndPhones(users) {
+  users.forEach(function(user) {
+    console.log(user['name'])
+    console.log("Cell: " + user['phones']['cell'])
+    console.log("Office: " + user['phones']['office'])
+  })
+}
+
 const users = [
   {
     name: "Duane", phones: { cell: "555-123-4567", office: "555-456-7890" }
@@ -103,11 +111,11 @@ const users = [
 ]
 printNameAndPhones(users)
 // => "Duane"
-=> "Cell: 555-123-4567"
-=> "Office: 555-456-7890"
-=> "Liza"
-=> "Cell: 555-234-5678"
-=> "Office: 555-567-1234"
+// => "Cell: 555-123-4567"
+// => "Office: 555-456-7890"
+// => "Liza"
+// => "Cell: 555-234-5678"
+// => "Office: 555-567-1234"
 console.log("%c----------", "color: red")
 
 
