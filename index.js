@@ -153,7 +153,7 @@ console.log("%c----------", "color: red")
 console.log("%cCallbacks - Question 2", "color: red")
 
 function greet(name) {
-  return "Hi, " + name + "!"; 
+  return "Hi, " + name + "!";
 }
 
 console.log(myMap(["Raffy", "Chase"], greet))
@@ -183,24 +183,35 @@ const line = []
 
 
 // *** Uncomment the lines below to test
-// console.log("%cScope & Closures - Question 1", "color: red")
+console.log("%cScope & Closures - Question 1", "color: red")
 
-// console.log(takeATicketNumber(line))
-// // => `Welcome. You are ticket number 1`
 
-// console.log(takeATicketNumber(line))
-// // => `Welcome. You are ticket number 2`
+function takeATicketNumber(line) {
+  // create position variable
+  // add number to line (array)
+  line.push(position)
+  // print statement with number
 
-// console.log(nowServing(line))
-// // => `Currently serving 1.`
+}
 
-// console.log(nowServing(line))
-// // => `Currently serving 2.`
 
-// console.log(takeATicketNumber(line))
-// // => `Welcome. You are ticket number 3`
 
-// console.log("%c----------", "color: red")
+console.log(takeATicketNumber(line))
+// => `Welcome. You are ticket number 1`
+
+console.log(takeATicketNumber(line))
+// => `Welcome. You are ticket number 2`
+
+console.log(nowServing(line))
+// => `Currently serving 1.`
+
+console.log(nowServing(line))
+// => `Currently serving 2.`
+
+console.log(takeATicketNumber(line))
+// => `Welcome. You are ticket number 3`
+
+console.log("%c----------", "color: red")
 
 // ***** Scope & Closures - Question 2 *****
 // *** Uncomment the lines below to test
