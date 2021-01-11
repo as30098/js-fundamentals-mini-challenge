@@ -69,7 +69,7 @@ console.log(drinkWater(12))
 
 Write a function `sameSameButDifferent` that takes in two arguments, `num` and `maybeNum`.
 
-<!-- If `num` and `maybeNum` are both numbers, and the same value, it should return `"same same"`. -->
+If `num` and `maybeNum` are both numbers, and the same value, it should return `"same same"`.
 
 If `num` is the same value as `maybeNum` after converting `maybeNum` to a number, it should return `"same same (but different)"`.
 
